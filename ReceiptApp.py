@@ -22,6 +22,7 @@ class ReceiptApp:
         item_name = input("Enter the item name: ")
 
         while True:
+
             try:
 
                 item_price = float(input(f"Enter the price of '{item_name}': "))
@@ -32,9 +33,9 @@ class ReceiptApp:
 
                 print("Please enter a valid price.")
 
-            self.items.append({"name": item_name, "price": item_price})
+        self.items.append({"name": item_name, "price": item_price})
 
-            print(f"'{item_name}' added to the receipt. \n")
+        print(f"'{item_name}' added to the receipt. \n")
 
     def view_receipt(self):
 
@@ -91,7 +92,7 @@ class ReceiptApp:
                 print("Invalid choice, please try again. \n")
 
 
-if __name__ == "_main_":
+if __name__ == "__receiptapp__":
 
     app = ReceiptApp()
 
